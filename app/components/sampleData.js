@@ -1,0 +1,44 @@
+var breedCharacteristics = [
+{ name: 'American Foxhound',
+  characteristics: {
+    adaptability: 2,
+    all_around_friendliness: 5,
+    health_and_grooming_needs: 4,
+    trainability: 4,
+    physical_needs: 5,
+    photo: "https://dogtime.com/assets/uploads/gallery/american-foxhound-dog-breed-pictures/4-sidestand.jpg"
+  }
+},
+{ name: 'Boxer',
+  characteristics: {
+    adaptability: 3,
+    all_around_friendliness: 4,
+    health_and_grooming_needs: 3,
+    trainability: 3,
+    physical_needs: 5,
+    photo: "https://dogtime.com/assets/uploads/gallery/boxer-dogs-and-puppies/boxer-dogs-puppies-1.jpg"
+  }
+},
+{ name: 'Chinese Shar-Pei',
+  characteristics: {
+    adaptability: 3,
+    all_around_friendliness: 2,
+    health_and_grooming_needs: 3,
+    trainability: 3,
+    physical_needs: 2,
+    photo: "https://dogtime.com/assets/uploads/gallery/chinese-shar-pei-dog-breed-pictures/1-chinese-shar-pei.jpg"
+  }
+},
+{ name: 'Dalmatian',
+  characteristics: {
+    adaptability: 3,
+    all_around_friendliness: 4,
+    health_and_grooming_needs: 4,
+    trainability: 3,
+    physical_needs: 5,
+    photo: "https://dogtime.com/assets/uploads/gallery/dalmatian-dog-breed-pictures/10-water.jpg"
+  }
+},
+];
+
+export default breedCharacteristics;
