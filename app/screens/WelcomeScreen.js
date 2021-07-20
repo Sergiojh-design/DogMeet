@@ -1,19 +1,20 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, View, Text, Button } from 'react-native';
+import { ImageBackground, Picker, StyleSheet, View, Pressable, Text, Button } from 'react-native';
 import DogList from '../components/DogList.js';
 
-function WelcomeScreen({ navigation }) {
+const WelcomeScreen = ({ navigation }) => {
+
   return (
     <ImageBackground
       style={styles.background}
       source={require('../assets/background.jpg')}
     >
-      <Text
-        style={styles.titleText}
-      >
-        Dog Meet
-      </Text>
-      <DogList navigation = {navigation}/>
+      <View style={styles.container}>
+      <Text style={styles.Text}>Click Me!</Text>
+        <Text style={styles.Text}>↓</Text>
+        <Text style={styles.titleText} onPress={() => navigation.navigate('Match')}>DogMeet</Text>
+        <DogList navigation = {navigation}/>
+      </View>
     </ImageBackground>
   );
 }
@@ -21,28 +22,26 @@ function WelcomeScreen({ navigation }) {
 export default WelcomeScreen;
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    position: "absolute",
+    alignItems: "center",
+    top: 420
+  },
   background: {
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center"
   },
   titleText: {
-    height: 100,
-    position: "absolute",
-    top: 425,
     fontSize: 35,
     fontWeight: "bold",
-    fontFamily: "Courier New"
+    fontFamily: "Courier New",
   },
-  loginButton: {
-    width: '100%',
-    height: 70,
-    backgroundColor: '#FF5733'
-  },
-  registerButton: {
-    width: '100%',
-    height: 70,
-    backgroundColor: '#FFC300'
+  Text: {
+    fontSize: 15,
+    color: "red",
+    fontFamily: "Courier New",
   }
 })
 

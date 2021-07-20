@@ -1,6 +1,10 @@
 var breedCharacteristics = [
 { name: 'American Foxhound',
   characteristics: {
+    name: 'Foxy',
+    status: 'none',
+    age: 6,
+    location: 'San Jose',
     adaptability: 2,
     all_around_friendliness: 5,
     health_and_grooming_needs: 4,
@@ -11,6 +15,10 @@ var breedCharacteristics = [
 },
 { name: 'Boxer',
   characteristics: {
+    name: 'Boxes',
+    status: 'none',
+    age: 1,
+    location: 'San Francisco',
     adaptability: 3,
     all_around_friendliness: 4,
     health_and_grooming_needs: 3,
@@ -21,6 +29,10 @@ var breedCharacteristics = [
 },
 { name: 'Chinese Shar-Pei',
   characteristics: {
+    name: 'Sharpie',
+    status: 'none',
+    age: 4,
+    location: 'Los Angeles',
     adaptability: 3,
     all_around_friendliness: 2,
     health_and_grooming_needs: 3,
@@ -31,6 +43,10 @@ var breedCharacteristics = [
 },
 { name: 'Dalmatian',
   characteristics: {
+    name: '101',
+    status: 'none',
+    age: 7,
+    location: 'Anaheim',
     adaptability: 3,
     all_around_friendliness: 4,
     health_and_grooming_needs: 4,

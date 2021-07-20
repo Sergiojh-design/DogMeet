@@ -22,7 +22,7 @@ function clickme(){
       </Text>
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 5, width: 400 }}
+        style={{ height: 5, width: 300 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
         itemStyle={{ backgroundColor: "#FFF0F5", color: "black", fontFamily:"Courier New", fontSize:20, fontWeight: "bold" }}
       >
@@ -44,13 +44,11 @@ export default DogList;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 515,
+    top: 20,
     alignItems: "center"
   },
   titleText: {
-    height: 100,
-    position: "absolute",
-    top: 480,
+    height: 30,
     fontSize: 30,
     fontWeight: "bold",
     fontFamily: "Courier New"
@@ -59,7 +57,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: "absolute",
-    top: 735,
+    top: 255,
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 4,

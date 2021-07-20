@@ -7,6 +7,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import BreedCharacteristics from './app/screens/BreedCharacteristics';
 import Characteristic from './app/screens/Characteristic';
+import Match from './app/screens/Match';
+import LikedDogs from './app/screens/LikedDogs';
 
 const Stack = createStackNavigator();
 
@@ -19,8 +21,10 @@ export default function App() {
           component={WelcomeScreen}
           options={{title: 'Home'}}
         />
-      <Stack.Screen name="Breed Characteristics" component={BreedCharacteristics} />
-      <Stack.Screen name="Characteristic" component={Characteristic} />
+        <Stack.Screen name="Match" component={Match} />
+        <Stack.Screen name="Breed Characteristics" component={BreedCharacteristics} />
+        <Stack.Screen name="Characteristic" component={Characteristic} />
+        <Stack.Screen name="Liked Dogs" component={LikedDogs} />
       </Stack.Navigator>
     </NavigationContainer>
   );

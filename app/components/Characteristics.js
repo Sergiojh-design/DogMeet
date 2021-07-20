@@ -124,5 +124,18 @@ const styles = StyleSheet.create({
     top: 52,
     width: 400,
     height: 400,
-  }
+  },
+  video: {
+    top: 70,
+    position: "absolute",
+    alignSelf: 'center',
+    width: 320,
+    height: 200,
+  },
+  buttons: {
+    top: 275,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });
